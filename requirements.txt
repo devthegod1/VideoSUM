@@ -1,0 +1,25 @@
+# UI & Environment
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+
+# Force modern numba to fix uv's Python 3.12 resolver loop
+numba>=0.60.0
+
+# Audio & Transcription
+yt-dlp>=2024.03.10
+openai-whisper
+torch>=2.2.0
+soundfile>=0.12.1
+
+# LangChain & LLM
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.1.0
+langchain-mistralai>=0.1.0
+
+# Vector Store & Embeddings
+chromadb>=0.4.22
+sentence-transformers>=2.3.0
+
+# Document Export
+reportlab>=4.1.0

@@ -1,0 +1,49 @@
+# =========================================================================
+# VIDEOSUM WORKSPACE PRODUCTION GITIGNORE PRESET
+# =========================================================================
+
+# 🔐 SECURITY WARNING: Private API Credentials & Configuration Keys
+.env
+.env.*
+*.env
+config.json
+secrets.toml
+
+# 📦 Dependency Managers & Virtual Environments
+.venv/
+venv/
+env/
+.uv/
+
+# 🎙️ Multimedia Data Ingestion, Chunks & Pipeline Caches
+data/
+data/cache/
+data/chunks/
+data/vector_stores/
+
+# Explicitly ignore any rogue audio or tracking layers
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mkv
+*.mov
+*.srt
+*.vtt
+
+# 📊 Vector Database Indexes & Core Knowledge Bases
+.chroma/
+chroma.sqlite3
+*.bin
+*.sqlite3
+
+# 🐍 Python Execution Runtime & Intermediate Bytecode Artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 💻 Operating System Artifacts & Desktop Configuration Meta-files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
